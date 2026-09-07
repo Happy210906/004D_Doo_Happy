@@ -1,34 +1,26 @@
 public class Canil {
-    
+
     public static void main(String[] args) {
-        System.out.println("*****Bienvenido al Canil*****");
+        System.out.println("****Bienvenido al Caníl*****");
 
-        Perro perro_de_profe = new Perro();
-        perro_de_profe.nombre = "Gimli";
-        perro_de_profe.edad = 6;
-        perro_de_profe.peso = 40;
-        perro_de_profe.tiene_vacunas = false;
 
-        Perro perro_de_happy = new Perro();
-        perro_de_happy.nombre = "Patroclo";
-        perro_de_happy.edad = 2;
-        perro_de_happy.peso = 20;
-        perro_de_happy.tiene_vacunas = true;
 
-        if (perro_de_happy.edad > 5){
-            System.out.println("El perro tiene más de 2 añotes");
+        Perro perro_del_profe = new Perro();
+
+        perro_del_profe.nombre = "Gimli";
+        perro_del_profe.edad = 1;
+        perro_del_profe.peso = 40;
+        perro_del_profe.tiene_vacuna = false;
+
+        if (perro_del_profe.edad > 2){
+            System.out.println("Es mayor que 2 años");
         }
         else {
-            System.out.println("El perro de happy tiene 2 añotes.");
-        }
-        if (perro_de_profe.peso > 20) {
-            System.out.println("Su perro esta guaton.");
-        }
-        else {
-            System.out.println("Su perro esta delgado.");
+            System.out.println("El perro es menor que 2 años");
         }
 
-        System.out.println("Thanks for you visit");
+
+        System.out.println("Gracias por su visita, lo quiero mucho <3");
     }
-    
+
 }
